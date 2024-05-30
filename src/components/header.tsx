@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../../public/logo.png";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/posts", label: "Posts" },
+  { href: "/create-post", label: "Create Post" },
 ];
 
 export default function Header() {
@@ -16,7 +18,7 @@ export default function Header() {
     <header className="flex justify-between items-center py-4 px-7 border-b">
       <Link href="/">
         <Image
-          src="https://bytegrad.com/course-assets/youtube/example-logo.png"
+          src={Logo}
           alt="Logo"
           className="w-[35px] h-[35px]"
           width="35"
