@@ -1,6 +1,7 @@
-import Link from "next/link";
 import PostsList from "@/components/posts-list";
 import { Suspense } from "react";
+
+export const dynamic = "force-dynamic";
 
 export default async function Page() {
   return (
